@@ -5,7 +5,6 @@ import Foundation
 import UIKit
 import SwiftUI
 
-
 fileprivate extension Color {
     static func convert(_ color: Color) -> UIColor {
         return UIColor(color)
