@@ -15,6 +15,13 @@ public struct ReaderProgressView: UIViewRepresentable {
     @State var progressColor: Color
     @State var spaceBetweenBars: CGFloat
     
+    public init(progress: Binding<CGFloat>, trackColor: Color, progressColor: Color, spaceBetweenBars: CGFloat) {
+        self._progress = progress
+        self.trackColor = trackColor
+        self.progressColor = progressColor
+        self.spaceBetweenBars = spaceBetweenBars
+    }
+    
     public func makeUIView(context: Context) -> UIKProgressBar {
         let progressBar = UIKProgressBar()
         progressBar.progress = progress
