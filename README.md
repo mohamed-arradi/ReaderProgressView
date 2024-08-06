@@ -1,8 +1,12 @@
 
 # ReaderProgressView
 
-<a href="https://buymeacoffee.com/momolette" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)
+![Platforms](https://img.shields.io/badge/Platforms-macOS_iOS-yellowgreen?style=flat-square)
 
+
+<a href="https://buymeacoffee.com/momolette" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+<br>
 Elegant and Animated Progress Bar designed for tracking document reading progress in Swift.
 It splits Progress Track with Remaining Track. This UI component integrates seamlessly with SwiftUI and UIKit, offering a customizable and visually appealing way to display a reading progress.
 
