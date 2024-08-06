@@ -11,7 +11,7 @@ fileprivate extension Color {
     }
 }
 
-class UIKProgressBar: UIView {
+public class UIKProgressBar: UIView {
 
     private let progressView = UIView()
     private let remainingView = UIView()
@@ -62,7 +62,7 @@ class UIKProgressBar: UIView {
         addSubview(spaceView)
     }
 
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         updateProgressViews()
     }

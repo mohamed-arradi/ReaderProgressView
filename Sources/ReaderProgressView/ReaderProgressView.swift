@@ -9,13 +9,13 @@ import Foundation
 import UIKit
 import SwiftUI
 
-struct ReaderProgressView: UIViewRepresentable {
+public struct ReaderProgressView: UIViewRepresentable {
     @Binding var progress: CGFloat
     @State var trackColor: Color
     @State var progressColor: Color
     @State var spaceBetweenBars: CGFloat
     
-    func makeUIView(context: Context) -> UIKProgressBar {
+    public func makeUIView(context: Context) -> UIKProgressBar {
         let progressBar = UIKProgressBar()
         progressBar.progress = progress
         progressBar.progressColor = progressColor
@@ -23,7 +23,7 @@ struct ReaderProgressView: UIViewRepresentable {
         progressBar.spaceBetweenBars = spaceBetweenBars
         return progressBar
     }
-    func updateUIView(_ uiView: UIKProgressBar, context: Context) {
+    public func updateUIView(_ uiView: UIKProgressBar, context: Context) {
         uiView.progress = progress
     }
 }
