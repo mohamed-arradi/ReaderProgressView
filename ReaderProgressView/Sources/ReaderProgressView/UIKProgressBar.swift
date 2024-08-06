@@ -16,8 +16,13 @@ class UIKProgressBar: UIView {
     private let progressView = UIView()
     private let remainingView = UIView()
     private let spaceView = UIView()
-    private let spaceBetweenBars: CGFloat = 8.0
     private let cornerRadius: CGFloat = 4
+    
+    var spaceBetweenBars: CGFloat = 8.0 {
+        didSet {
+            setupViews()
+        }
+    }
     
     var progressColor: Color = .black {
         didSet {

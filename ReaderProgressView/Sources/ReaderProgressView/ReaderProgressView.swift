@@ -13,12 +13,14 @@ struct ReaderProgressView: UIViewRepresentable {
     @Binding var progress: CGFloat
     @State var trackColor: Color
     @State var progressColor: Color
+    @State var spaceBetweenBars: CGFloat
     
     func makeUIView(context: Context) -> UIKProgressBar {
         let progressBar = UIKProgressBar()
         progressBar.progress = progress
         progressBar.progressColor = progressColor
         progressBar.trackColor = trackColor
+        progressBar.spaceBetweenBars = spaceBetweenBars
         return progressBar
     }
     func updateUIView(_ uiView: UIKProgressBar, context: Context) {
@@ -33,7 +35,8 @@ fileprivate struct ContentView: View {
         VStack {
             ReaderProgressView(progress: $progress,
                                trackColor: .gray.opacity(0.3),
-                               progressColor: .blue.opacity(0.9))
+                               progressColor: .blue.opacity(0.9), 
+                               spaceBetweenBars: 8.0)
                 .frame(height: 10)
                 .padding()
 
