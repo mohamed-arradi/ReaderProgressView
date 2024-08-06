@@ -41,6 +41,7 @@ struct ContentView: View {
                                trackColor: .gray.opacity(0.3),
                                progressColor: .blue, 
                                spaceBetweenBars: 8.0)
+            .frame(height: 10) // Set your own sizing
             // Add your own UI to increase / decrease progress value
             Button("Increase Progress") {
                 withAnimation {
